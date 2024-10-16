@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chennai Insurance Agency - Your Trusted Partner for Comprehensive Insurance Solutions" />
     <title>Chennai Insurance Agency - Your Trusted Partner</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
@@ -25,26 +26,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
     <style>
-      @keyframes float {
-        0% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-        100% {
-          transform: translateY(0px);
-        }
-      }
-      .floating {
-        animation: float 3s ease-in-out infinite;
+      /* Updated color theme */
+      body {
+        background-color: #f9f9f9; /* Light background for contrast */
       }
       .gradient-bg {
-        background: linear-gradient(90deg, #4caf50, #45a049);
+        background: linear-gradient(90deg, #007a33, #b89b00); /* Rich green to gold gradient */
       }
-      .insurance-type:hover .insurance-icon {
-        transform: scale(1.1);
-        transition: transform 0.3s ease;
+      .btn-primary {
+        background-color: #007a33; /* Rich green */
+        color: white;
+      }
+      .btn-primary:hover {
+        background-color: #005f26; /* Darker green on hover */
+      }
+      .insurance-icon {
+        background-color: #e6e6e6; /* Light gray for icons */
+      }
+      /* Responsive adjustments */
+      @media (max-width: 640px) {
+        .carousel {
+          height: 50vh; /* Adjust carousel height for mobile */
+        }
       }
     </style>
   </head>
@@ -52,9 +55,7 @@
     <header class="gradient-bg text-white py-4 px-6 sticky top-0 z-50">
       <div class="container mx-auto flex justify-between items-center">
         <div class="flex items-center space-x-4">
-          <div
-            class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
-          >
+          <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
             <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
           </div>
           <div>
@@ -64,33 +65,18 @@
         </div>
         <nav>
           <ul class="flex space-x-6">
-            <li>
-              <a href="#" class="hover:text-green-200 transition">Home</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-200 transition">Services</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-200 transition">About</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-200 transition">Contact</a>
-            </li>
+            <li><a href="#" class="hover:text-green-200 transition">Home</a></li>
+            <li><a href="#" class="hover:text-green-200 transition">Services</a></li>
+            <li><a href="#" class="hover:text-green-200 transition">About</a></li>
+            <li><a href="#" class="hover:text-green-200 transition">Contact</a></li>
           </ul>
         </nav>
         <div class="flex items-center space-x-4">
-          <a
-            href="tel:+9812345670"
-            class="flex items-center space-x-2 hover:text-green-200 transition"
-          >
+          <a href="tel:+9812345670" class="flex items-center space-x-2 hover:text-green-200 transition">
             <i class="fas fa-phone-alt"></i>
             <span>+919787346123</span>
           </a>
-          <a
-            href="https://wa.me/919787346123"
-            target="_blank"
-            class="text-2xl hover:text-green-200 transition"
-          >
+          <a href="https://wa.me/919787346123" target="_blank" class="text-2xl hover:text-green-200 transition">
             <i class="fab fa-whatsapp"></i>
           </a>
         </div>
@@ -100,75 +86,30 @@
     <main>
       <section class="relative h-96 overflow-hidden">
         <div class="carousel">
-          <div
-            class="relative h-96 bg-cover bg-center"
-            style="background-image: url('https://img.freepik.com/free-vector/gradient-hospital-template-design_23-2149632115.jpg')"
-          >
-            <div
-              class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
-            >
+          <div class="relative h-96 bg-cover bg-center" style="background-image: url('YOUR_CAROUSEL_IMAGE_1_URL');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
               <div class="text-center text-white">
-                <h2
-                  class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown"
-                >
-                  Protect Your Future
-                </h2>
-                <p class="text-xl mb-6 animate__animated animate__fadeInUp">
-                  Comprehensive insurance solutions for peace of mind
-                </p>
-                <a
-                  href="#"
-                  class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition animate__animated animate__fadeInUp"
-                  >Get a Quote</a
-                >
+                <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">Protect Your Future</h2>
+                <p class="text-xl mb-6 animate__animated animate__fadeInUp">Comprehensive insurance solutions for peace of mind</p>
+                <a href="#" class="btn-primary px-6 py-3 rounded-full hover:bg-green-600 transition animate__animated animate__fadeInUp">Get a Quote</a>
               </div>
             </div>
           </div>
-          <div
-            class="relative h-96 bg-cover bg-center"
-            style="background-image: url('/api/placeholder/1200/400')"
-          >
-            <div
-              class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
-            >
+          <div class="relative h-96 bg-cover bg-center" style="background-image: url('YOUR_CAROUSEL_IMAGE_2_URL');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
               <div class="text-center text-white">
-                <h2
-                  class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown"
-                >
-                  Life Insurance
-                </h2>
-                <p class="text-xl mb-6 animate__animated animate__fadeInUp">
-                  Secure your family's future today
-                </p>
-                <a
-                  href="#"
-                  class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition animate__animated animate__fadeInUp"
-                  >Learn More</a
-                >
+                <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">Life Insurance</h2>
+                <p class="text-xl mb-6 animate__animated animate__fadeInUp">Secure your family's future today</p>
+                <a href="#" class="btn-primary px-6 py-3 rounded-full hover:bg-green-600 transition animate__animated animate__fadeInUp">Learn More</a>
               </div>
             </div>
           </div>
-          <div
-            class="relative h-96 bg-cover bg-center"
-            style="background-image: url('/api/placeholder/1200/400')"
-          >
-            <div
-              class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
-            >
+          <div class="relative h-96 bg-cover bg-center" style="background-image: url('YOUR_CAROUSEL_IMAGE_3_URL');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
               <div class="text-center text-white">
-                <h2
-                  class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown"
-                >
-                  Health Insurance
-                </h2>
-                <p class="text-xl mb-6 animate__animated animate__fadeInUp">
-                  Your health is your wealth
-                </p>
-                <a
-                  href="#"
-                  class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition animate__animated animate__fadeInUp"
-                  >Explore Plans</a
-                >
+                <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">Health Insurance</h2>
+                <p class="text-xl mb-6 animate__animated animate__fadeInUp">Your health is your wealth</p>
+                <a href="#" class="btn-primary px-6 py-3 rounded-full hover:bg-green-600 transition animate__animated animate__fadeInUp">Explore Plans</a>
               </div>
             </div>
           </div>
@@ -177,87 +118,49 @@
 
       <section class="py-16 bg-gray-100">
         <div class="container mx-auto">
-          <h2 class="text-3xl font-bold text-center mb-12">
-            Our Insurance Solutions
-          </h2>
+          <h2 class="text-3xl font-bold text-center mb-12">Our Insurance Solutions</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div
-              class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition"
-            >
-              <div
-                class="insurance-icon w-24 h-24 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+            <div class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+              <div class="insurance-icon w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-heartbeat text-4xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Health Insurance</h3>
-              <p class="text-gray-600">
-                Comprehensive health coverage for you and your family
-              </p>
+              <p class="text-gray-600">Comprehensive health coverage for you and your family</p>
             </div>
-            <div
-              class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition"
-            >
-              <div
-                class="insurance-icon w-24 h-24 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+            <div class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+              <div class="insurance-icon w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-user-shield text-4xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Life Insurance</h3>
-              <p class="text-gray-600">
-                Secure your family's future with our life insurance plans
-              </p>
+              <p class="text-gray-600">Secure your family's future with our life insurance plans</p>
             </div>
-            <div
-              class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition"
-            >
-              <div
-                class="insurance-icon w-24 h-24 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+            <div class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+              <div class="insurance-icon w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-car text-4xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Motor Insurance</h3>
-              <p class="text-gray-600">
-                Protect your vehicle with our comprehensive motor insurance
-              </p>
+              <p class="text-gray-600">Protect your vehicle with our comprehensive motor insurance</p>
             </div>
-            <div
-              class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition"
-            >
-              <div
-                class="insurance-icon w-24 h-24 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+            <div class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+              <div class="insurance-icon w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-umbrella text-4xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Personal Accident</h3>
-              <p class="text-gray-600">
-                Stay protected with our personal accident insurance
-              </p>
+              <p class="text-gray-600">Stay protected with our personal accident insurance</p>
             </div>
-            <div
-              class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition"
-            >
-              <div
-                class="insurance-icon w-24 h-24 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+            <div class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+              <div class="insurance-icon w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-plane text-4xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Travel Insurance</h3>
-              <p class="text-gray-600">
-                Travel worry-free with our comprehensive travel insurance
-              </p>
+              <p class="text-gray-600">Travel worry-free with our comprehensive travel insurance</p>
             </div>
-            <div
-              class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition"
-            >
-              <div
-                class="insurance-icon w-24 h-24 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+            <div class="insurance-type bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+              <div class="insurance-icon w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-home text-4xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Home Insurance</h3>
-              <p class="text-gray-600">
-                Protect your home and belongings with our home insurance
-              </p>
+              <p class="text-gray-600">Protect your home and belongings with our home insurance</p>
             </div>
           </div>
         </div>
@@ -268,49 +171,32 @@
           <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="text-center">
-              <div
-                class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+              <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-check-circle text-3xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Trusted by Thousands</h3>
-              <p class="text-gray-600">
-                Join our satisfied customers who trust us with their insurance
-                needs
-              </p>
+              <p class="text-gray-600">Join our satisfied customers who trust us with their insurance needs</p>
             </div>
             <div class="text-center">
-              <div
-                class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+              <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-bolt text-3xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Fast Claims Process</h3>
-              <p class="text-gray-600">
-                Quick and hassle-free claims settlement for your peace of mind
-              </p>
+              <p class="text-gray-600">Quick and hassle-free claims settlement for your peace of mind</p>
             </div>
             <div class="text-center">
-              <div
-                class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+              <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-headset text-3xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
-              <p class="text-gray-600">
-                Our dedicated team is always here to assist you, anytime
-              </p>
+              <p class="text-gray-600">Our dedicated team is always here to assist you, anytime</p>
             </div>
             <div class="text-center">
-              <div
-                class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
-              >
+              <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center">
                 <i class="fas fa-shield-alt text-3xl text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-2">Comprehensive Coverage</h3>
-              <p class="text-gray-600">
-                Tailored insurance solutions to meet all your needs
-              </p>
+              <p class="text-gray-600">Tailored insurance solutions to meet all your needs</p>
             </div>
           </div>
         </div>
@@ -318,29 +204,14 @@
 
       <section class="py-16 bg-green-50">
         <div class="container mx-auto">
-          <div
-            class="bg-white rounded-lg shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center"
-          >
+          <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-8 md:mb-0">
               <h2 class="text-3xl font-bold mb-4">Get a Free Quote Today</h2>
-              <p class="text-gray-600 mb-6">
-                Discover how we can protect what matters most to you. Our expert
-                team is ready to provide you with a personalized insurance
-                quote.
-              </p>
-              <button
-                id="enquiryBtn"
-                class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition"
-              >
-                Get Your Free Quote
-              </button>
+              <p class="text-gray-600 mb-6">Discover how we can protect what matters most to you. Our expert team is ready to provide you with a personalized insurance quote.</p>
+              <button id="enquiryBtn" class="btn-primary px-6 py-3 rounded-full hover:bg-green-600 transition">Get Your Free Quote</button>
             </div>
             <div class="md:w-1/2 flex justify-center">
-              <img
-                src="/api/placeholder/500/300"
-                alt="Insurance Quote"
-                class="rounded-lg shadow-md floating"
-              />
+              <img src="YOUR_IMAGE_LINK" alt="Insurance Quote" class="rounded-lg shadow-md floating" />
             </div>
           </div>
         </div>
@@ -351,68 +222,30 @@
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 class="text-2xl font-bold mb-4">Chennai Insurance</h3>
-          <p class="mb-4">
-            Your trusted partner for all insurance needs. Contact us today for
-            personalized solutions.
-          </p>
+          <p class="mb-4">Your trusted partner for all insurance needs. Contact us today for personalized solutions.</p>
           <div class="flex space-x-4">
-            <a href="#" class="text-2xl hover:text-green-400 transition"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" class="text-2xl hover:text-green-400 transition"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="#" class="text-2xl hover:text-green-400 transition"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" class="text-2xl hover:text-green-400 transition"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+            <a href="#" class="text-2xl hover:text-green-400 transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-2xl hover:text-green-400 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-2xl hover:text-green-400 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-2xl hover:text-green-400 transition"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
         <div>
           <h3 class="text-xl font-bold mb-4">Quick Links</h3>
           <ul class="space-y-2">
-            <li>
-              <a href="#" class="hover:text-green-400 transition">Home</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-400 transition">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-400 transition">Services</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-400 transition">Claims</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-400 transition">FAQs</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-400 transition">Contact</a>
-            </li>
+            <li><a href="#" class="hover:text-green-400 transition">Home</a></li>
+            <li><a href="#" class="hover:text-green-400 transition">About Us</a></li>
+            <li><a href="#" class="hover:text-green-400 transition">Services</a></li>
+            <li><a href="#" class="hover:text-green-400 transition">Claims</a></li>
+            <li><a href="#" class="hover:text-green-400 transition">FAQs</a></li>
+            <li><a href="#" class="hover:text-green-400 transition">Contact</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-          <p class="flex items-center mb-2">
-            <i class="fas fa-map-marker-alt mr-2"></i>
-            123 Insurance Street, Chennai, India
-          </p>
-          <p class="flex items-center mb-2">
-            <i class="fas fa-phone-alt mr-2"></i>
-            <a href="tel:+9812345670" class="hover:text-green-400 transition"
-              >+9812345670</a
-            >
-          </p>
-          <p class="flex items-center mb-2">
-            <i class="fas fa-envelope mr-2"></i>
-            <a
-              href="mailto:info@chennaiinsurance.com"
-              class="hover:text-green-400 transition"
-              >info@chennaiinsurance.com</a
-            >
-          </p>
+          <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Insurance Street, Chennai, India</p>
+          <p class="flex items-center mb-2"><i class="fas fa-phone-alt mr-2"></i> <a href="tel:+9812345670" class="hover:text-green-400 transition">+9812345670</a></p>
+          <p class="flex items-center mb-2"><i class="fas fa-envelope mr-2"></i> <a href="mailto:info@chennaiinsurance.com" class="hover:text-green-400 transition">info@chennaiinsurance.com</a></p>
         </div>
       </div>
       <div class="mt-8 pt-8 border-t border-gray-700 text-center">
@@ -421,167 +254,25 @@
     </footer>
 
     <!-- Enquiry Modal -->
-    <div
-      id="enquiryModal"
-      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
-    >
+    <div id="enquiryModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
       <div class="bg-white rounded-lg p-8 max-w-md w-full">
         <div class="flex justify-between items-center mb-6">
           <h2 class="text-2xl font-bold">Get Your Free Quote</h2>
-          <button id="closeModal" class="text-gray-500 hover:text-gray-700">
-            <i class="fas fa-times"></i>
-          </button>
+          <button id="closeModal" class="text-gray-500 hover:text-gray-700"><i class="fas fa-times"></i></button>
         </div>
         <form id="enquiryForm">
           <div class="mb-4">
-            <label for="name" class="block text-gray-700 font-bold mb-2"
-              >Name</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            />
+            <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required />
           </div>
           <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-bold mb-2"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            />
+            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required />
           </div>
           <div class="mb-4">
-            <label for="phone" class="block text-gray-700 font-bold mb-2"
-              >Phone</label
-            >
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            />
+            <label for="phone" class="block text-gray-700 font-bold mb-2">Phone</label>
+            <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required />
           </div>
           <div class="mb-4">
-            <label
-              for="insuranceType"
-              class="block text-gray-700 font-bold mb-2"
-              >Insurance Type</label
-            >
-            <select
-              id="insuranceType"
-              name="insuranceType"
-              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            >
-              <option value="">Select Insurance Type</option>
-              <option value="health">Health Insurance</option>
-              <option value="life">Life Insurance</option>
-              <option value="motor">Motor Insurance</option>
-              <option value="travel">Travel Insurance</option>
-              <option value="home">Home Insurance</option>
-            </select>
-          </div>
-          <div class="mb-6">
-            <label for="message" class="block text-gray-700 font-bold mb-2"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-      // Initialize the carousel
-      $(document).ready(function () {
-        $(".carousel").slick({
-          dots: true,
-          infinite: true,
-          speed: 500,
-          fade: true,
-          cssEase: "linear",
-          autoplay: true,
-          autoplaySpeed: 5000,
-        });
-      });
-
-      // Modal functionality
-      const modal = document.getElementById("enquiryModal");
-      const openModalBtn = document.getElementById("enquiryBtn");
-      const closeModalBtn = document.getElementById("closeModal");
-
-      openModalBtn.addEventListener("click", () => {
-        modal.classList.remove("hidden");
-        modal.classList.add("flex");
-      });
-
-      closeModalBtn.addEventListener("click", () => {
-        modal.classList.remove("flex");
-        modal.classList.add("hidden");
-      });
-
-      // Close modal when clicking outside
-      modal.addEventListener("click", (e) => {
-        if (e.target === modal) {
-          modal.classList.remove("flex");
-          modal.classList.add("hidden");
-        }
-      });
-
-      // Handle form submission
-      document
-        .getElementById("enquiryForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          // Get form values
-          const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const phone = document.getElementById("phone").value;
-          const insuranceType = document.getElementById("insuranceType").value;
-          const message = document.getElementById("message").value;
-
-          // Prepare WhatsApp message
-          const whatsappNumber = "919787346123"; // Replace with your actual WhatsApp number
-          const whatsappMessage = `Hello, I would like to get a quote for ${insuranceType} insurance:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
-
-          // Create WhatsApp link
-          const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-            whatsappMessage
-          )}`;
-
-          // Open WhatsApp in a new tab
-          window.open(whatsappLink, "_blank");
-
-          // Close the modal
-          modal.classList.remove("flex");
-          modal.classList.add("hidden");
-
-          // Reset the form
-          this.reset();
-        });
-    </script>
-  </body>
-</html>
+            <label for="insuranceType" class="block text-gray-700 font-bold mb-2">Insurance Type</label>
+            <select id="insuranceType" name="insuranceType" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500
